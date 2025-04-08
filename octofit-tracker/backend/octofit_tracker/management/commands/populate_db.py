@@ -32,6 +32,7 @@ class Command(BaseCommand):
 
         # Create teams
         team = Team(_id=ObjectId(), name='Blue Team')
+        team = Team(_id=ObjectId(), name='Gold Team')
         team.save()
         for user in users:
             team.members.add(user)
